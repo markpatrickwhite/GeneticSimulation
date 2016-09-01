@@ -1,0 +1,5 @@
+GeneticSimulation/bin/
+GeneticSimulation/obj/
+GeneticSimulation.UnitTests/bin/
+GeneticSimulation.UnitTests/obj/
+.vs/GeneticSimulation/v14/.suo
