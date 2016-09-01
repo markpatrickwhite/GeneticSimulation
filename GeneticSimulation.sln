@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticSimulation", "GeneticSimulation\GeneticSimulation.csproj", "{331FF222-623C-4F88-A75F-CED4D2B05FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticSimulation.UnitTests", "GeneticSimulation.UnitTests\GeneticSimulation.UnitTests.csproj", "{146F56B0-2725-4F1E-A2F8-1A509062A263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331FF222-623C-4F88-A75F-CED4D2B05FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331FF222-623C-4F88-A75F-CED4D2B05FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331FF222-623C-4F88-A75F-CED4D2B05FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331FF222-623C-4F88-A75F-CED4D2B05FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146F56B0-2725-4F1E-A2F8-1A509062A263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146F56B0-2725-4F1E-A2F8-1A509062A263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146F56B0-2725-4F1E-A2F8-1A509062A263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146F56B0-2725-4F1E-A2F8-1A509062A263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
