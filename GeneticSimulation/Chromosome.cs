@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace GeneticSimulation
 {
@@ -27,7 +28,7 @@ namespace GeneticSimulation
             }
             else
             {
-                Genes.Add(name, gene); 
+                Genes.Add(name, gene);
             }
         }
 
@@ -43,6 +44,36 @@ namespace GeneticSimulation
         }
 
         public IChromosome Recombine(IChromosome chromosome)
+        {
+            var recombinedChromosome = new Chromosome();
+            var randomNumberGenerator = new Random();
+
+            using (var e1 = this.Genes.GetEnumerator())
+            using (var e2 = chromosome.Genes.GetEnumerator())
+            {
+                while (e1.MoveNext() && e2.MoveNext())
+                {
+                    var item1 = e1.Current;
+                    var item2 = e2.Current;
+
+                    // use item1 and item2
+
+                    Gene selectedGene;
+                    if (randomNumberGenerator.Next(1, 100) <= 50)
+                    {
+                        selectedGene = item1.Value as Gene;
+                    }
+                    else
+                    {
+                        selectedGene = item2.Value as Gene;
+                    }
+                    recombinedChromosome.AddGene(selectedGene);
+                }
+            }
+            return recombinedChromosome;
+        }
+
+        public IChromosome ComplexRecombine(IChromosome chromosome)
         {
             var recombinedChromosome = new Chromosome();
             //TODO: what if gene count is different between chromosomes?
